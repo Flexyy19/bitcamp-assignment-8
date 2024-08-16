@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.products {
+  width: 320px;
+  height: 380px;
+  margin-bottom: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  border-radius: 30px;
+  justify-content: space-evenly;
+  animation-name: rotate, glow;
+  animation-duration: 750ms;
+}
+
+.products:hover img {
+  scale: 1.3;
+}
+
+.products:hover .eco-friendly-water-bottle {
+  scale: 1.169;
+}
+
+img {
+  width: 100px;
+  display: block;
+  transition: all 0.4s;
+}
+
+h3 {
+  display: inline;
+  z-index: 9999;
+}
+
+.eco-friendly-water-bottle {
+  transform: translateX(24.6px);
+}
+
+h1 {
+  margin: 20px 0 20px 0;
+}
+
+.eco-friendly-bottle-div {
+  border: 3px solid rgba(92, 117, 104, 0.637);
+}
+
+.earbuds-div {
+  border: 3px solid rgba(192, 192, 192, 0.692);
+}
+.speaker-div {
+  border: 3px groove rgba(52, 139, 238, 0.418);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotatez(360deg);
+  }
+}
+
+@keyframes glow {
+  50% {
+    box-shadow: 0px 0px 40px rgba(22, 120, 185, 0.829);
+  }
+}
